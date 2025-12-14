@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int price =sc.nextInt();
+        int pens =sc.nextInt();
+        int freePens=(pens/5) * 2;   // 2 free pens for every 5
+        int paidPens=pens-freePens;
+        int totalCost=paidPens*price;
+        System.out.println(paidPens);
+        System.out.println(totalCost);
+    }
+}
